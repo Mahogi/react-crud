@@ -13,7 +13,7 @@
         "https://a0.muscache.com/im/pictures/miso/Hosting-718023/original/68c9bf4d-272e-4454-99b8-570a0e6972a3.jpeg?im_w=720"
       ],
       "price": "233€",
-      "rating": 4.98
+      "rating": 4.68
     },
     {
       "id": "2",
@@ -28,7 +28,7 @@
         "https://a0.muscache.com/im/pictures/miso/Hosting-44485429/original/fb96ba3b-23ef-4485-a0a3-3d16c3eecd35.jpeg?im_w=720"
       ],
       "price": "62€",
-      "rating": 4.94
+      "rating": 4.24
     },
     {
       "id": "3",
@@ -43,7 +43,7 @@
         "https://a0.muscache.com/im/pictures/4bf9a8b0-b560-4335-8386-8191888d215d.jpg?im_w=720"
       ],
       "price": "82€",
-      "rating": 5.0
+      "rating": 3.0
     },
     {
       "id": "4",
@@ -58,7 +58,7 @@
         "https://a0.muscache.com/im/pictures/f5598280-d070-44e5-9ddc-7dd79ea6b83c.jpg?im_w=720"
       ],
       "price": "269€",
-      "rating": 4.95
+      "rating": 4.45
     },
     {
       "id": "5",
@@ -73,7 +73,7 @@
         "https://a0.muscache.com/im/pictures/23e05999-701d-443e-8e59-efc1037472fb.jpg?im_w=720"
       ],
       "price": "45€",
-      "rating": 4.88
+      "rating": 4.98
     },
     {
       "id": "6",
@@ -88,22 +88,22 @@
         "https://a0.muscache.com/im/pictures/5bfa1537-029f-4a59-9ce8-8216079139dd.jpg?im_w=720"
       ],
       "price": "71€",
-      "rating": 4.9
+      "rating": 4.2
     },
     {
       "id": "7",
-      "title": "Peaceful Earth House with Full Panorama",
+      "title": "Silver Check Holiday Home",
       "location": {
-        "country": "Hungary",
-        "city": "Paloznak"
+        "country": "Italy",
+        "city": "Lombardia"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/c796ef33-b2c9-4a0a-8238-26617f3a9bdb.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/bdf48b9a-6112-4c6d-a874-1514a79d3a60.jpg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-43620298/original/2f3f0463-9ef7-4ee7-a1f7-898ac3325d5e.jpeg?im_w=1440"
+        "https://a0.muscache.com/im/pictures/miso/Hosting-29557492/original/15099f1f-40fa-4fd3-83c4-0e6e9fa063be.jpeg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/93fb5cac-4dcf-4af8-aa56-2bb2ddee9394.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/24914ad9-bd28-4f61-8a7a-d09037ca70f0.jpg?im_w=720"
       ],
-      "price": "60€",
-      "rating": 4.98
+      "price": "66€",
+      "rating": 4.87
     },
     {
       "id": "8",
@@ -118,7 +118,7 @@
         "https://a0.muscache.com/im/pictures/baf5a240-e031-4e8e-9b41-e6e6b0888942.jpg?im_w=720"
       ],
       "price": "146€",
-      "rating": 4.94
+      "rating": 4.34
     },
     {
       "id": "9",
@@ -133,7 +133,7 @@
         "https://a0.muscache.com/im/pictures/b2fb15bf-0a7e-4691-bf51-a8aad2597104.jpg?im_w=720"
       ],
       "price": "388€",
-      "rating": 4.78
+      "rating": 4.18
     },
     {
       "id": "10",
@@ -148,7 +148,7 @@
         "https://a0.muscache.com/im/pictures/a0fb396e-e381-45e5-b6a0-e91e274da967.jpg?im_w=720"
       ],
       "price": "57€",
-      "rating": 4.88
+      "rating": 4.68
     },
     {
       "id": "11",
@@ -163,7 +163,7 @@
         "https://a0.muscache.com/im/pictures/5641cb6e-2477-4a93-b471-cf34e8972e8e.jpg?im_w=720"
       ],
       "price": "439€",
-      "rating": 4.75
+      "rating": 3.75
     },
     {
       "id": "12",
@@ -178,7 +178,7 @@
         "https://a0.muscache.com/im/pictures/92989ae2-f7f6-42b6-bf56-101d94053f8c.jpg?im_w=720"
       ],
       "price": "923€",
-      "rating": 4.88
+      "rating": 5.0
     }
   ]
 }
