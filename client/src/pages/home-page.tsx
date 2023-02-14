@@ -2,7 +2,8 @@ import React from 'react';
 import { Box } from '@mui/material';
 import ApiService from 'services/api-service';
 import classes from './index.module.css';
-import HouseCard from './house-list-page/house-card';
+import HouseCard from './house-card/house-card';
+import * as Styled from './homepage-styled';
 
 const HomePage = () => {
   const [houses, setHouses] = React.useState<HouseModel[]>([]);
@@ -18,10 +19,10 @@ const HomePage = () => {
   return (
     <>
       <h1 className={classes.h1}>{title}</h1>
-      <Box className={classes.container}>
+      <Styled.BoxWrapper>
         {houses.map((house) => (<HouseCard key={house.id} {...house} />
         ))}
-      </Box>
+      </Styled.BoxWrapper>
     </>
   );
 };

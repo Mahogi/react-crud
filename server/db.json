@@ -2,7 +2,7 @@
   "houses": [
     {
       "id": "1",
-      "title": "Earth Hobbit House in the forest",
+      "title": "Earth Hobbit House",
       "location": {
         "country": "Germany",
         "city": "Greifenstein"
@@ -47,7 +47,7 @@
     },
     {
       "id": "4",
-      "title": "Architect surfhouse amazing sea view",
+      "title": "Architect surfhouse",
       "location": {
         "country": "Sweden",
         "city": "Gotland"
@@ -62,7 +62,7 @@
     },
     {
       "id": "5",
-      "title": "Eco Strawbale Retreat Natural Earth House",
+      "title": "Eco Strawbale Retreat",
       "location": {
         "country": "Poland",
         "city": "Przełomka"
@@ -77,7 +77,7 @@
     },
     {
       "id": "6",
-      "title": "Peaceful Earth House with Full Panorama",
+      "title": "Peaceful Earth House",
       "location": {
         "country": "Hungary",
         "city": "Paloznak"
@@ -107,7 +107,7 @@
     },
     {
       "id": "8",
-      "title": "Apartment villa Casa Storia & Casa Antica",
+      "title": "Apartment villa Casa Storia",
       "location": {
         "country": "Croatia",
         "city": "Veprinac"
@@ -122,7 +122,7 @@
     },
     {
       "id": "9",
-      "title": "Large and modern cabin on Nordseter",
+      "title": "Large and modern cabin",
       "location": {
         "country": "Norway",
         "city": "Lillehammer"
