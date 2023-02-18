@@ -1,11 +1,11 @@
 import { Box, styled } from '@mui/material';
 
 // eslint-disable-next-line import/prefer-default-export
-export const BoxWrapper = styled(Box)(({ theme }) => ({
+export const HouseCardsGrid = styled(Box)(({ theme }) => ({
   display: 'grid',
   gridTemplateColumns: 'repeat(1, 1fr)',
-  gap: 1,
-  padding: 2,
+  gap: theme.spacing(1),
+  padding: theme.spacing(2),
   justifyItems: 'center',
   margin: 'auto',
   maxWidth: theme.breakpoints.values.xl,
