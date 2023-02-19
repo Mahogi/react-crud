@@ -16,6 +16,16 @@ const HomePage = () => {
     })();
   }, []);
 
+  const onDelete = async (houseId: string) => {
+    try {
+      await ApiService.deleteHouse(houseId);
+      const fetchedHouses = await ApiService.fetchHouses();
+      setHouses(fetchedHouses);
+    } catch (error) {
+      alert(error);
+    }
+  };
+
   return (
     <>
       <Typography
@@ -30,7 +40,7 @@ const HomePage = () => {
       </Typography>
       <Header />
       <Styled.HouseCardsGrid>
-        {houses.map((house) => (<HouseCard key={house.id} {...house} />
+        {houses.map((house) => (<HouseCard key={house.id} {...house} onDelete={onDelete} />
         ))}
       </Styled.HouseCardsGrid>
     </>

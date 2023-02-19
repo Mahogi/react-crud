@@ -12,8 +12,6 @@ export const ImageBoxWrapper = styled(Box)(({ theme }) => ({
   margin: 'auto',
   [theme.breakpoints.up('sm')]: {
     gridTemplateColumns: 'repeat(2, 1fr)',
-    gridTemplateRows: 'repeat(2, 1fr)',
-    gridArea: '1, 1, 1, 2',
   },
   [theme.breakpoints.up('md')]: {
     gridTemplateColumns: 'repeat(3, 1fr)',

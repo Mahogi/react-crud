@@ -11,24 +11,48 @@ import * as Styled from './styled';
 import routes from '../../navigation/routes';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
+import apiService from '../../services/api-service';
+
+// type HouseCardProps = {
+//   house: HouseModel;
+//   // onDelete: (id: string) => void;
+// };
 
 SwiperCore.use([Pagination]);
 
 const HouseCard: React.FC<HouseModel> = ({
+  // house: {
   id,
-  title,
-  location,
   images,
-  price,
+  location,
   rating,
+  title,
+  price,
+  // },
+  onDelete,
 }) => {
   const navigate = useNavigate();
+
+  const handleDelete = async (houseId: string) => {
+    try {
+      onDelete(houseId);
+    } catch (error) {
+      alert(error);
+    }
+  };
 
   return (
     <Styled.PaperWrapper>
       <Styled.AdminActions>
         <Button variant="contained" color="warning" size="small">Update</Button>
-        <Button variant="contained" color="error" size="small">Delete</Button>
+        <Button
+          variant="contained"
+          color="error"
+          size="small"
+          onClick={() => handleDelete(id)}
+        >
+          Delete
+        </Button>
       </Styled.AdminActions>
       <Typography variant="h6" sx={{ textAlign: 'center' }}>{title}</Typography>
       <span>

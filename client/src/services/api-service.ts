@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const LINKEND = '/houses';
+
 const api = axios.create({
   baseURL: 'http://localhost:5024',
   timeout: 1000,
@@ -10,27 +12,36 @@ const api = axios.create({
 });
 
 const fetchHouses = async () => {
-  const { data } = await api.get<HouseModel[]>('/houses');
+  const { data } = await api.get<HouseModel[]>(LINKEND);
 
   return data;
 };
 
 const fetchHouse = async (id: string | number) => {
-  const { data } = await api.get<HouseModel>(`/houses/${id}`);
+  const { data } = await api.get<HouseModel>(`${LINKEND}/${id}`);
 
   return data;
 };
 
 const createHouse = async (body: string) => {
-  const { status } = await api.post<HouseModel>('/houses', body);
+  const { status } = await api.post<HouseModel>(LINKEND, body);
 
   return status;
+};
+
+const deleteHouse = async (id: string) => {
+  try {
+    await api.delete(`${LINKEND}/${id}`);
+  } catch (error) {
+    alert(`There was an error! ${error}`);
+  }
 };
 
 const ApiService = {
   fetchHouses,
   fetchHouse,
   createHouse,
+  deleteHouse,
 };
 
 export default ApiService;
