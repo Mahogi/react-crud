@@ -30,11 +30,7 @@ const createHouse = async (body: string) => {
 };
 
 const deleteHouse = async (id: string) => {
-  try {
-    await api.delete(`${LINKEND}/${id}`);
-  } catch (error) {
-    alert(`There was an error! ${error}`);
-  }
+  await api.delete(`${LINKEND}/${id}`);
 };
 
 const ApiService = {
