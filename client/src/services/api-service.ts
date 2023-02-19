@@ -21,9 +21,16 @@ const fetchHouse = async (id: string | number) => {
   return data;
 };
 
+const createHouse = async (body: string) => {
+  const { status } = await api.post<HouseModel>('/houses', body);
+
+  return status;
+};
+
 const ApiService = {
   fetchHouses,
   fetchHouse,
+  createHouse,
 };
 
 export default ApiService;
