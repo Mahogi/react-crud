@@ -3,10 +3,16 @@ import {
   Button, Rating, Typography,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import HouseModel from '../../models/house-models';
 import Img from '../../ui/img';
 import * as Styled from './styled';
 import routes from '../../navigation/routes';
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
+
+SwiperCore.use([Pagination]);
 
 const HouseCard: React.FC<HouseModel> = ({
   id,
@@ -28,7 +34,24 @@ const HouseCard: React.FC<HouseModel> = ({
       <span>
         {`Location - ${location.country}, ${location.city}`}
       </span>
-      <Img src={images[0]} alt="house" sx={{ height: '200px' }} />
+      <Swiper
+        effect="slide"
+        navigation
+        modules={[Navigation]}
+        grabCursor
+        slidesPerView="auto"
+        pagination
+        loop
+      >
+        {
+          images.map((img: string) => (
+            <SwiperSlide key={img}>
+              <Img src={img} alt="house" sx={{ height: '200px' }} />
+            </SwiperSlide>
+          ))
+        }
+      </Swiper>
+
       <span>{`Price per night: ${price}`}</span>
       <Rating
         value={rating}

@@ -14,6 +14,7 @@ export const AdminActions = styled(Box)(({ theme }) => ({
   top: theme.spacing(10),
   right: theme.spacing(3),
   gap: '10px',
+  zIndex: '100',
 }));
 
 export const ButtonContainer = styled(Box)(({ theme }) => ({
